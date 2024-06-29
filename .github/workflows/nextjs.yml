@@ -29,7 +29,8 @@ jobs:
           path: ./next  # Adjust path based on your build output directory
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages@v4.3.0  # Action to deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # Use PAT stored as secret
           branch: gh-pages  # Target branch for deployment (adjust if needed)
