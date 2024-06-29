@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3  # Checkout code from your repository
 
-      - name: Use Node.js 16  # Adjust Node.js version if needed
+      - name: Use Node.js   
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install dependencies
         run: npm install  # Or yarn install, depending on your project
