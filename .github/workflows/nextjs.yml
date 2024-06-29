@@ -32,6 +32,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use PAT stored as secret
+          github_token: ${{ secrets.TOKEN_DEP }}  # Use PAT stored as secret
           branch: gh-pages  # Target branch for deployment (adjust if needed)
           publish_dir: ${{ secrets.ARTIFACT_NAME }}  # Artifact name from previous step
